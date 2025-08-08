@@ -11,7 +11,7 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
-app.use('/uploads', express.static('uploads'));
+app.use('/api/uploads', express.static('uploads'));
 
 app.use('/api/grievance', grievanceRoutes);
 app.use('/api/enums', enumRoutes);
